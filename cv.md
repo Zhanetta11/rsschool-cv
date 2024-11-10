@@ -19,6 +19,7 @@ I am a passionate and highly motivated Junior Developer with a love for solving 
 Here are a few examples of my recent projects:
 
 - [JavaScript Shopping List App](https://github.com/Zhanetta11/frontend-course/tree/shopping_list/Shopping%20list) - A to-do list application built with vanilla JavaScript.
+- [Frontend Course](https://github.com/Zhanetta11/frontend-course): This repository contains my tasks and projects for the frontend development course.
 - [Frontend Course - Mid Project](https://github.com/Zhanetta11/frontend-course/tree/main/mid_project): A full-featured web application built as part of my frontend development course. This project highlights my skills in HTML, CSS, and front-end frameworks. The application includes interactive features and responsive design, making it accessible across different devices.
 
 
