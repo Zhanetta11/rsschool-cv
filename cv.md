@@ -31,3 +31,12 @@ Here are a few examples of my recent projects:
 ### Course Projects
 - **E-Commerce Website**: Built a full-stack e-commerce site using React for the front-end and Node.js for the back-end.
 - **Data Analysis with Python**: Analyzed data using Python and Pandas, presenting the results through visualizations.
+
+## Education
+- **Bachelor of Science in Computer Science** - Ala-Too International University (2nd course)
+- **Courses**:
+  - JavaScript, [itcbootcamp]
+  
+## English Proficiency
+- **English Level**: Upper-Intermediate
+- **Experience**: Studied English in a Preparatory University Course for one year. Got a B2 certificate. 
