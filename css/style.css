@@ -18,8 +18,7 @@ nav {
     list-style: none; 
     display: flex;
     gap: 50px; 
-    margin: 0;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -74,7 +73,7 @@ nav {
 }
 
 .bio ul {
-    width: 50%;
+    width: 70%;
     padding: 30px 20px 30px 40px;
     font-family: "Sofadi One", system-ui;
     font-size: 1em;
@@ -178,8 +177,8 @@ nav {
 }
 
 #projects_section {
-    height: 760px;
     background-color: #936639;
+    padding-bottom: 50px;
 }
 
 #projects_section h2,
@@ -238,7 +237,7 @@ nav {
 
 .projects {
     background-color: #98c1d9;
-    margin: 50px auto; 
+    margin: 50px auto 0px; 
 }
 
 #contact_section {
@@ -249,7 +248,7 @@ nav {
 }
 
 .contact_info{
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .contact_info ul {
@@ -314,4 +313,26 @@ footer p a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .bio {
+        margin-left: 50px;
+    }
+    
+    .bio h1 {
+        font-size: 2em;
+    }
+    
+    .bio h3 {
+        font-size: 0.8em;
+        width: 80%;
+    }
+    
+    .bio ul {
+        width: 100%;
+        margin-top: 0px;
+        line-height: 20px;
+    }   
 }
