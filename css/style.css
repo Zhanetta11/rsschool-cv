@@ -207,7 +207,7 @@
 
 #contact_section {
     background-color: #ede0d4;
-    height: 250px;
+    height: 200px;
     text-align: center; 
     margin: 0 auto;
 }
@@ -235,4 +235,47 @@
 .contact_info a:hover {
     text-decoration: underline; 
     color: #750c0c;
+}
+
+footer {
+    background-color:  #07183b; 
+    padding: 20px; 
+    text-align: center; 
+    border-top: 2px solid #ddd; 
+}
+
+footer h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff; 
+}
+
+footer a {
+    color: rgb(197, 17, 17);
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-logo {
+    max-width: 100px;
+    margin: 10px 0; 
+}
+
+footer p {
+    margin: 10px 0;
+    color: #666; 
+    font-size: 0.9em;
+}
+
+footer p a {
+    color:  rgb(197, 17, 17); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
