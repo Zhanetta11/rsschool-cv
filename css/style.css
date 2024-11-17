@@ -4,6 +4,42 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color:  #07183b;
+    padding: 20px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    gap: 50px; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.1em; 
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #fff; 
+    color: rgb(197, 17, 17); 
+    border-radius: 5px;
+}
+
+
 #bio_section {
     background-color: #936639;
     display: flex;
