@@ -146,7 +146,8 @@
     background-color: #936639;
 }
 
-#projects_section h3 {
+#projects_section h2,
+#contact_section h2 {
     width: 100%;
     height: auto;
     font-family: "Sofadi One", system-ui;
@@ -202,4 +203,36 @@
 .projects {
     background-color: #98c1d9;
     margin: 50px auto; 
+}
+
+#contact_section {
+    background-color: #ede0d4;
+    height: 250px;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.contact_info{
+    margin-top: 20px;
+}
+
+.contact_info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact_info li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact_info a {
+    color: #0f368a; 
+    text-decoration: none; 
+}
+
+.contact_info a:hover {
+    text-decoration: underline; 
+    color: #750c0c;
 }
