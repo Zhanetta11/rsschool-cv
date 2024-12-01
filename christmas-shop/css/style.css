@@ -8,10 +8,11 @@
     margin: 0;
     scroll-behavior: smooth;
     list-style-type: none;  
+    text-decoration: none;
 }
 
 .container {
-    margin: 0 50px;
+    margin: 0 40px;
 }
 
 .header-content {
@@ -30,7 +31,6 @@
     gap: 10px;
     padding: 10px 25px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .logo-text {
@@ -40,7 +40,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(24, 28, 41, 1);
-    text-decoration: none;
 }
 
 .navigation {
@@ -351,7 +350,7 @@
 
 
 /* Best Gifts Section */
-.best-gifts {
+#best-gifts {
     position: relative;
     background-color: rgba(255, 70, 70, 1);
     padding-bottom: 50px;
@@ -359,6 +358,7 @@
 
 .background-image {
     position: absolute;
+    z-index: 0;
 }
 
 .background-image img {
@@ -395,7 +395,9 @@
 .gift-cards {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 5px;
+    flex-wrap: wrap;
+    z-index: 2;
 }
 
 .gift-card {
@@ -405,6 +407,7 @@
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .gift-card:hover {
@@ -428,6 +431,7 @@
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 0 0 20px 20px;
+    z-index: 2;
 }
 
 .gift-category {
@@ -448,12 +452,13 @@
     color: #FF43F7;
 }
 
-.gift-info h3 {
+.gift-name{
     font-size: 16px;
     line-height: 24.32px;
     letter-spacing: 0.08em;
     color: rgba(24, 28, 41, 1);
     padding-top: 8px;
+    cursor: pointer;
     transition: color 0.3s ease;
 }
 
@@ -516,7 +521,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 150%;
-    letter-spacing: 18%;
+    letter-spacing: 10px;
     text-align: center;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
@@ -578,13 +583,13 @@
 .time-value {
     font-size: 24px;
     line-height: 36.48px;
-    letter-spacing: 16%;
+    letter-spacing: 8px;
 }
 
 .time-label {
     font-size: 12px;
     line-height: 15.6px;
-    letter-spacing: 5%;
+    letter-spacing: 3px;
 }
 
 .separator {
@@ -592,4 +597,136 @@
     height: 20px;
     background-color: rgba(255, 255, 255, 0.4);
     display: inline-block;
+}
+
+
+/* ===== footer ======= */
+
+.footer {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 60px 50px;
+    text-align: center;
+    
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+    min-width: 400px;
+    max-height: 214px;
+    background-color: rgba(236, 243, 248, 1);
+    border-radius: 20px;
+    color: rgba(24, 28, 41, 1);
+    padding: 20px 0;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card:hover .card-header {
+    color: rgba(255, 70, 70, 1);
+}
+
+.card:hover .card-subheader {
+    color: rgba(255, 70, 70, 1);
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+.content {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(24, 28, 41, 1);
+}
+
+.card-header {
+    font-size: 24px;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+}
+
+.card-subheader {
+    font-size: 16px;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    padding-top: 12px;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(24, 28, 41, 1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    color: rgba(24, 28, 41, 1);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-icon:hover svg {
+    color: rgba(255, 70, 70, 1);
+}
+
+.copyright {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    text-align: center;
+    color: rgba(24, 28, 41, 1);
+    padding-bottom: 12px;
+}
+
+.school-link {
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: rgba(24, 28, 41, 1);
+}
+
+.school-link:hover {
+    color: rgba(255, 70, 70, 1);
 }
