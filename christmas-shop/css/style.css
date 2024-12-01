@@ -11,7 +11,7 @@
     list-style-type: none;  
 }
 
-.header-wrapper {
+.container {
     margin: 0 50px;
 }
 
@@ -68,4 +68,172 @@
     background-color: rgba(255, 70, 70, 0.1);
     border-radius: 10px;
     color: rgba(255, 70, 70, 1);
+}
+
+
+/* Hero section styling */
+#hero {
+    background-color: #FF4646; 
+    position: relative;
+    min-height: 532px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.hero-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.big_ball_img,
+.snow_img {
+    width: 100%;
+    height: 532px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+}
+
+.hero-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-caption {
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 12px 0;
+}
+
+.hero-heading {
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #181C29; 
+    border-radius: 20px;
+    padding: 20px 32px;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #FFFFFF;
+    color: #181C29; 
+    cursor: pointer;
+}
+
+/* About section styling */
+#about {
+    background-color: #FF4646;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.about_content {
+    padding: 60px 0;
+}
+
+.about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.about_snow_img {
+    width: 100%;
+    height: 648px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.about_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.about_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 60px;
+    height: 100%;
+}
+
+.about_text {
+    max-width: 426px;
+    padding: 60px 0;
+}
+
+.about-title {
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #FF4646; 
+}
+
+.about_heading {
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.16em;
+    padding: 20px 0;
+    color: #181C29; 
+}
+
+.about_description {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    color: #181C29; 
+}
+
+.about_santa_img {
+    height: 528px;
+    flex-shrink: 0;
+    width: 638px;
+}
+
+.about_santa_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
