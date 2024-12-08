@@ -432,7 +432,7 @@
     }
 
     .card {
-        max-width: 364px;
+        min-width: 364px;
     }
 
     .cards-container {
