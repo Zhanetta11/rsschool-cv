@@ -70,6 +70,14 @@
     color: rgba(255, 70, 70, 1);
 }
 
+@media (hover: none) {
+    .nav-item a:hover {
+        background-color: transparent;
+        border-radius: 100%;
+        color:rgba(24, 28, 41, 1);
+    }
+}
+
 .nav-item.gift a:hover {
     background-color: transparent;
     border-radius: 0;
@@ -122,6 +130,21 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media (hover: none) {
+    .inactive a:hover {
+        background-color: transparent;
+    }
+
+    .gift-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .gift-card:hover h3 {
+        color: black;
+    }
+}
+
 .default-tab {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -142,14 +165,16 @@
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 1440px;
     max-width: 100%;
     padding: 20px 0 60px 0;
 }
+
 
 .gift-card {
     background-color: rgba(236, 243, 248, 1);
@@ -165,6 +190,8 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .gift-card:hover h3 {
     color: rgba(255, 70, 70, 1);
@@ -345,7 +372,12 @@
 }
 
 
+
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;  
+    }
+
     .burger {
         display: flex;
     }
@@ -369,27 +401,66 @@
         line-height: 15.6px;
         letter-spacing: 0.05em;
     }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
     .footer {
-        padding: 15px;
+        margin: 60px 8px;
+        padding: 0;
     }
 
     .cards-container {
-        width: 752px;
+        gap: 12px;
+        flex-direction: column;
     }
 
-    .card {
-        min-width: 752px;
+    .card-header {
+        font-size: 24px;
+        line-height: 36.48px;
+    }
+
+    .card-subheader {
+        font-size: 16px;
+        line-height: 24.32px;
+    }
+
+    /* Footer Bottom Section */
+    .footer-bottom {
+        margin-top: 40px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .school-link {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
 
 @media (max-width: 380px) {
+    html, body {
+        overflow-x: hidden;  
+    }
+
+    .cards {
+        grid-template-columns: 1fr; 
+    }
+
     .burger {
         display: flex;
     }
@@ -419,23 +490,31 @@
         max-width: 380px;
         padding: 0 8px;
     }
+    .footer-bottom {
+        margin-top: 40px;
+    }
 
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
+    .social-links {
         gap: 8px;
-
     }
 
-    /* ===== footer ======= */
-    .footer {
-        padding: 10px;
+    .social-icon {
+        width: 30px;
+        height: 30px;
     }
 
-    .card {
-        min-width: 364px;
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
     }
 
-    .cards-container {
-        width: 364px;
+    .copyright {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .school-link {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
